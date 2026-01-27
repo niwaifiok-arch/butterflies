@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterflies in My Stomach 🦋</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating butterflies animation -->
+    <div class="butterfly-container">
+        <div class="butterfly">🦋</div>
+        <div class="butterfly">🦋</div>
+        <div class="butterfly">🦋</div>
+        <div class="butterfly">🦋</div>
+        <div class="butterfly">🦋</div>
+    </div>
+
+    <!-- Landing Section -->
+    <section class="landing" id="home">
+        <div class="content">
+            <h1 class="title">Welcome, My Love 💕</h1>
+            <p class="subtitle">Every moment with you feels like butterflies in my stomach</p>
+            <button class="explore-btn" onclick="scrollToGifts()">Explore Your Gifts</button>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#gifts" class="nav-link">Gifts</a>
+        <a href="#memories" class="nav-link">Memories</a>
+        <a href="#letter" class="nav-link">Letter</a>
+    </nav>
+
+    <!-- Gifts Section -->
+    <section class="gifts-section" id="gifts">
+        <h2 class="section-title">Your Special Gifts 🎁</h2>
+        <div class="gifts-grid">
+            <!-- Gift Card 1: Love Letter -->
+            <div class="gift-card" onclick="openGift('letter')">
+                <div class="gift-icon">💌</div>
+                <h3>A Letter From My Heart</h3>
+                <p>Words I've been wanting to tell you</p>
+            </div>
+
+            <!-- Gift Card 2: Photo Gallery -->
+            <div class="gift-card" onclick="openGift('memories')">
+                <div class="gift-icon">📸</div>
+                <h3>Our Beautiful Memories</h3>
+                <p>Moments frozen in time</p>
+            </div>
+
+            <!-- Gift Card 3: Playlist -->
+            <div class="gift-card" onclick="openGift('playlist')">
+                <div class="gift-icon">🎵</div>
+                <h3>Songs That Remind Me of You</h3>
+                <p>Our soundtrack together</p>
+            </div>
+
+            <!-- Gift Card 4: Reasons I Love You -->
+            <div class="gift-card" onclick="openGift('reasons')">
+                <div class="gift-icon">❤️</div>
+                <h3>Why I Love You</h3>
+                <p>A never-ending list</p>
+            </div>
+
+            <!-- Gift Card 5: Special Dates -->
+            <div class="gift-card" onclick="openGift('dates')">
+                <div class="gift-icon">📅</div>
+                <h3>Days to Remember</h3>
+                <p>Counting our special moments</p>
+            </div>
+
+            <!-- Gift Card 6: Interactive -->
+            <div class="gift-card" onclick="openGift('interactive')">
+                <div class="gift-icon">🎮</div>
+                <h3>Something Fun</h3>
+                <p>A little surprise for you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Modal -->
+    <div id="letterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('letterModal')">&times;</span>
+            <h2>To The Love of My Life 💕</h2>
+            <div class="letter-content">
+                <p>My Dearest,</p>
+                <p>Every time I think of you, I feel butterflies in my stomach - that magical, irreplaceable feeling that reminds me how incredibly lucky I am to have you in my life.</p>
+                <p>You are my sunshine on cloudy days, my anchor in stormy seas, and my greatest adventure. With you, every moment is special, every laugh is brighter, and every day feels like a gift.</p>
+                <p>This website is just a small way to show you how much you mean to me. Each section here is filled with memories, feelings, and moments that make my heart skip a beat.</p>
+                <p>Thank you for being you. Thank you for choosing me. Thank you for making life so beautiful.</p>
+                <p>Forever yours,<br>Niwa 💖</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memories Modal -->
+    <div id="memoriesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('memoriesModal')">&times;</span>
+            <h2>Our Beautiful Memories 📸</h2>
+            <div class="memories-grid">
+                <div class="memory-card">
+                    <div class="memory-placeholder">
+                        <p>Add your photos here!</p>
+                        <span>📷</span>
+                    </div>
+                    <p class="memory-caption">Our First Date</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-placeholder">
+                        <p>Add your photos here!</p>
+                        <span>📷</span>
+                    </div>
+                    <p class="memory-caption">That Special Day</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-placeholder">
+                        <p>Add your photos here!</p>
+                        <span>📷</span>
+                    </div>
+                    <p class="memory-caption">Together Always</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-placeholder">
+                        <p>Add your photos here!</p>
+                        <span>📷</span>
+                    </div>
+                    <p class="memory-caption">Making Memories</p>
+                </div>
+            </div>
+            <p class="instruction">💡 Replace the placeholder images with your actual photos!</p>
+        </div>
+    </div>
+
+    <!-- Playlist Modal -->
+    <div id="playlistModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('playlistModal')">&times;</span>
+            <h2>Our Playlist 🎵</h2>
+            <div class="playlist">
+                <div class="song-item">
+                    <span class="song-number">1</span>
+                    <div class="song-info">
+                        <p class="song-title">Perfect - Ed Sheeran</p>
+                        <p class="song-note">Our song ❤️</p>
+                    </div>
+                </div>
+                <div class="song-item">
+                    <span class="song-number">2</span>
+                    <div class="song-info">
+                        <p class="song-title">Add your favorite song</p>
+                        <p class="song-note">Customize this playlist!</p>
+                    </div>
+                </div>
+                <div class="song-item">
+                    <span class="song-number">3</span>
+                    <div class="song-info">
+                        <p class="song-title">Add another song</p>
+                        <p class="song-note">Songs that remind you of her</p>
+                    </div>
+                </div>
+            </div>
+            <p class="instruction">💡 Add links to Spotify or YouTube for each song!</p>
+        </div>
+    </div>
+
+    <!-- Reasons Modal -->
+    <div id="reasonsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('reasonsModal')">&times;</span>
+            <h2>Why I Love You ❤️</h2>
+            <div class="reasons-list">
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>Your smile lights up my entire world</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>The way you laugh at my silly jokes</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>Your kindness and beautiful heart</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>How you make every day an adventure</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>Your strength and determination inspire me</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>The comfort I feel when I'm with you</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>Every moment we share together</p>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">💕</span>
+                    <p>Because you're simply you, and that's everything</p>
+                </div>
+            </div>
+            <p class="instruction">💡 Add your own personal reasons!</p>
+        </div>
+    </div>
+
+    <!-- Dates Modal -->
+    <div id="datesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('datesModal')">&times;</span>
+            <h2>Our Special Dates 📅</h2>
+            <div class="dates-container">
+                <div class="date-card">
+                    <div class="date-icon">💑</div>
+                    <h3>The Day We Met</h3>
+                    <p class="date-value">[Add your date]</p>
+                    <p class="date-description">When my life changed forever</p>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">💖</div>
+                    <h3>Our First Date</h3>
+                    <p class="date-value">[Add your date]</p>
+                    <p class="date-description">The beginning of our story</p>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">🎂</div>
+                    <h3>Your Birthday</h3>
+                    <p class="date-value">[Add her birthday]</p>
+                    <p class="date-description">The day an angel was born</p>
+                </div>
+                <div class="date-card countdown-card">
+                    <div class="date-icon">⏰</div>
+                    <h3>Days Together</h3>
+                    <p class="date-value" id="daysTogether">-</p>
+                    <p class="date-description">And counting...</p>
+                </div>
+            </div>
+            <p class="instruction">💡 Update the dates with your actual special moments!</p>
+        </div>
+    </div>
+
+    <!-- Interactive Modal -->
+    <div id="interactiveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('interactiveModal')">&times;</span>
+            <h2>Open When... 💌</h2>
+            <div class="open-when-grid">
+                <button class="open-when-card" onclick="showMessage('miss')">
+                    <div class="open-icon">🥺</div>
+                    <p>Open when you miss me</p>
+                </button>
+                <button class="open-when-card" onclick="showMessage('happy')">
+                    <div class="open-icon">😊</div>
+                    <p>Open when you're happy</p>
+                </button>
+                <button class="open-when-card" onclick="showMessage('sad')">
+                    <div class="open-icon">😢</div>
+                    <p>Open when you're sad</p>
+                </button>
+                <button class="open-when-card" onclick="showMessage('night')">
+                    <div class="open-icon">🌙</div>
+                    <p>Open before bed</p>
+                </button>
+            </div>
+            <div id="messageBox" class="message-box hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
