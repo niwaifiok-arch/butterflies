@@ -218,7 +218,7 @@ body {
 /* Memories Grid */
 .memories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -239,6 +239,19 @@ body {
 }
 
 .memory-placeholder span { font-size: 3rem; margin-top: 1rem; }
+
+.memory-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.memory-img:hover {
+    transform: scale(1.03);
+}
 
 .memory-caption {
     font-style: italic;
