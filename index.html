@@ -37,42 +37,31 @@
     <section class="gifts-section" id="gifts">
         <h2 class="section-title">Your Special Gifts 🎁</h2>
         <div class="gifts-grid">
-            <!-- Gift Card 1: Love Letter -->
             <div class="gift-card" onclick="openGift('letter')">
                 <div class="gift-icon">💌</div>
                 <h3>A Letter From My Heart</h3>
                 <p>Words I've been wanting to tell you</p>
             </div>
-
-            <!-- Gift Card 2: Photo Gallery -->
             <div class="gift-card" onclick="openGift('memories')">
                 <div class="gift-icon">📸</div>
                 <h3>Our Beautiful Memories</h3>
                 <p>Moments frozen in time</p>
             </div>
-
-            <!-- Gift Card 3: Playlist -->
             <div class="gift-card" onclick="openGift('playlist')">
                 <div class="gift-icon">🎵</div>
                 <h3>Songs That Remind Me of You</h3>
                 <p>Our soundtrack together</p>
             </div>
-
-            <!-- Gift Card 4: Reasons I Love You -->
             <div class="gift-card" onclick="openGift('reasons')">
                 <div class="gift-icon">❤️</div>
                 <h3>Why I Love You</h3>
                 <p>A never-ending list</p>
             </div>
-
-            <!-- Gift Card 5: Special Dates -->
             <div class="gift-card" onclick="openGift('dates')">
                 <div class="gift-icon">📅</div>
                 <h3>Days to Remember</h3>
                 <p>Counting our special moments</p>
             </div>
-
-            <!-- Gift Card 6: Interactive -->
             <div class="gift-card" onclick="openGift('interactive')">
                 <div class="gift-icon">🎮</div>
                 <h3>Something Fun</h3>
@@ -140,31 +129,125 @@
     <div id="playlistModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('playlistModal')">&times;</span>
-            <h2>Our Playlist 🎵</h2>
+            <h2>Our Soundtrack 🎵</h2>
+            <div class="spotify-embed-container">
+                <iframe
+                    src="https://open.spotify.com/embed/playlist/0cv38wBvPmkyDBCxEBf9oE"
+                    width="100%"
+                    height="380"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                    style="border-radius: 15px; margin-bottom: 2rem;"
+                ></iframe>
+            </div>
             <div class="playlist">
-                <div class="song-item">
+                <a class="song-item" href="https://open.spotify.com/track/4uvjOKsp7mSjrDhWdkLPBY" target="_blank">
                     <span class="song-number">1</span>
                     <div class="song-info">
-                        <p class="song-title">Perfect - Ed Sheeran</p>
-                        <p class="song-note">Our song ❤️</p>
+                        <p class="song-title">I Think We're Alone Now — Tiffany</p>
+                        <p class="song-note">Just the two of us 🎶</p>
                     </div>
-                </div>
-                <div class="song-item">
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/0TYC36fmbYl54IqTxjdmDa" target="_blank">
                     <span class="song-number">2</span>
                     <div class="song-info">
-                        <p class="song-title">Add your favorite song</p>
-                        <p class="song-note">Customize this playlist!</p>
+                        <p class="song-title">Black Hearted Love — PJ Harvey & John Parish</p>
+                        <p class="song-note">Dark and beautiful, just like you 🖤</p>
                     </div>
-                </div>
-                <div class="song-item">
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/1300POeOaj8qho30FRHjgf" target="_blank">
                     <span class="song-number">3</span>
                     <div class="song-info">
-                        <p class="song-title">Add another song</p>
-                        <p class="song-note">Songs that remind you of her</p>
+                        <p class="song-title">Cornflake Girl — Tori Amos</p>
+                        <p class="song-note">Timeless, ethereal, like you ✨</p>
                     </div>
-                </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/2sW8fmnISifQTRgnRrQTYW" target="_blank">
+                    <span class="song-number">4</span>
+                    <div class="song-info">
+                        <p class="song-title">Roads — Portishead</p>
+                        <p class="song-note">Finding our way together 🌙</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/04Glred2wGdSNH11Qh4EDe" target="_blank">
+                    <span class="song-number">5</span>
+                    <div class="song-info">
+                        <p class="song-title">This Is Love — PJ Harvey</p>
+                        <p class="song-note">This is exactly it 💕</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/4v2rkl1mC3zVAz0nXMx9r4" target="_blank">
+                    <span class="song-number">6</span>
+                    <div class="song-info">
+                        <p class="song-title">Heart Of Glass — Blondie</p>
+                        <p class="song-note">Transparent in the best way 💎</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/3zf2eLN9Yf8ayZO5cn4Xh5" target="_blank">
+                    <span class="song-number">7</span>
+                    <div class="song-info">
+                        <p class="song-title">This Is the Day — The The</p>
+                        <p class="song-note">Every day with you feels like this 🌅</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/4euAGZTszWPrriggYK0HG9" target="_blank">
+                    <span class="song-number">8</span>
+                    <div class="song-info">
+                        <p class="song-title">Lay All Your Love On Me — ABBA</p>
+                        <p class="song-note">All of it 💖</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/0GjEhVFGZW8afUYGChu3Rr" target="_blank">
+                    <span class="song-number">9</span>
+                    <div class="song-info">
+                        <p class="song-title">Dancing Queen — ABBA</p>
+                        <p class="song-note">You, always 👑</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/3pf96IFggfQuT6Gafqx2rt" target="_blank">
+                    <span class="song-number">10</span>
+                    <div class="song-info">
+                        <p class="song-title">Sunny — Boney M.</p>
+                        <p class="song-note">You are my sunshine ☀️</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/4WjZwfdm3H0jucilpZGDkn" target="_blank">
+                    <span class="song-number">11</span>
+                    <div class="song-info">
+                        <p class="song-title">Happy Song — Boney M.</p>
+                        <p class="song-note">You make me feel this 😊</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/4UhUmdIw2FFfHJ0lB5ZkeQ" target="_blank">
+                    <span class="song-number">12</span>
+                    <div class="song-info">
+                        <p class="song-title">Love For Sale — Boney M.</p>
+                        <p class="song-note">Mine is not for sale 🔒</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/3UBItNVbFQiVC5hBQlBvnr" target="_blank">
+                    <span class="song-number">13</span>
+                    <div class="song-info">
+                        <p class="song-title">Your Woman — White Town</p>
+                        <p class="song-note">Yours, entirely 🤍</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/0lNudhCTfcGBQVvSO22g4r" target="_blank">
+                    <span class="song-number">14</span>
+                    <div class="song-info">
+                        <p class="song-title">Just Like Heaven — The Cure</p>
+                        <p class="song-note">Being with you feels like this 🌙</p>
+                    </div>
+                </a>
+                <a class="song-item" href="https://open.spotify.com/track/4IvZLDtwBHmBmwgDIUbuwa" target="_blank">
+                    <span class="song-number">15</span>
+                    <div class="song-info">
+                        <p class="song-title">Here Comes Your Man — Pixies</p>
+                        <p class="song-note">Always coming back to you 💕</p>
+                    </div>
+                </a>
             </div>
-            <p class="instruction">💡 Add links to Spotify or YouTube for each song!</p>
         </div>
     </div>
 
@@ -207,7 +290,6 @@
                     <p>Because you're simply you, and that's everything</p>
                 </div>
             </div>
-            <p class="instruction">💡 Add your own personal reasons!</p>
         </div>
     </div>
 
@@ -219,21 +301,21 @@
             <div class="dates-container">
                 <div class="date-card">
                     <div class="date-icon">💑</div>
-                    <h3>The Day We Met</h3>
-                    <p class="date-value">[Add your date]</p>
-                    <p class="date-description">When my life changed forever</p>
+                    <h3>Our First Date</h3>
+                    <p class="date-value">June 2022</p>
+                    <p class="date-description">The beginning of our story 🌸</p>
                 </div>
                 <div class="date-card">
                     <div class="date-icon">💖</div>
-                    <h3>Our First Date</h3>
-                    <p class="date-value">[Add your date]</p>
-                    <p class="date-description">The beginning of our story</p>
+                    <h3>Officially Together</h3>
+                    <p class="date-value">07 October 2022</p>
+                    <p class="date-description">The day you became mine 🥰</p>
                 </div>
                 <div class="date-card">
                     <div class="date-icon">🎂</div>
                     <h3>Your Birthday</h3>
-                    <p class="date-value">[Add her birthday]</p>
-                    <p class="date-description">The day an angel was born</p>
+                    <p class="date-value">17 October 2005</p>
+                    <p class="date-description">The day an angel was born ✨</p>
                 </div>
                 <div class="date-card countdown-card">
                     <div class="date-icon">⏰</div>
@@ -242,7 +324,6 @@
                     <p class="date-description">And counting...</p>
                 </div>
             </div>
-            <p class="instruction">💡 Update the dates with your actual special moments!</p>
         </div>
     </div>
 

@@ -21,7 +21,6 @@ function openGift(giftType) {
         document.getElementById(modalId).style.display = 'block';
         document.body.style.overflow = 'hidden';
         
-        // If dates modal, calculate days together
         if (giftType === 'dates') {
             calculateDaysTogether();
         }
@@ -33,7 +32,6 @@ function closeModal(modalId) {
     document.getElementById(modalId).style.display = 'none';
     document.body.style.overflow = 'auto';
     
-    // Hide message box when closing interactive modal
     if (modalId === 'interactiveModal') {
         document.getElementById('messageBox').classList.add('hidden');
     }
@@ -47,10 +45,9 @@ window.onclick = function(event) {
     }
 }
 
-// Calculate days together (you'll need to set your actual start date)
+// Calculate days together
 function calculateDaysTogether() {
-    // SET YOUR DATE HERE - Format: 'YYYY-MM-DD'
-    const startDate = new Date('2024-01-01'); // Change this to your actual date!
+    const startDate = new Date('2022-10-07'); // Officially together 💖
     const today = new Date();
     const diffTime = Math.abs(today - startDate);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -74,7 +71,6 @@ function showMessage(type) {
     messageBox.textContent = messages[type] || 'I love you! 💕';
     messageBox.classList.remove('hidden');
     
-    // Smooth scroll to message
     messageBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
@@ -89,14 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                targetSection.scrollIntoView({ 
-                    behavior: 'smooth' 
-                });
+                targetSection.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
     
-    // Add entrance animation to gift cards
     const observerOptions = {
         threshold: 0.2,
         rootMargin: '0px 0px -100px 0px'
@@ -117,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Keyboard navigation - ESC to close modals
+// ESC to close modals
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         const modals = document.querySelectorAll('.modal');
@@ -130,7 +123,7 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Add sparkle effect on hover for gift cards
+// Hover effect on gift cards
 document.addEventListener('DOMContentLoaded', function() {
     const giftCards = document.querySelectorAll('.gift-card');
     
@@ -138,13 +131,11 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) scale(1.02)';
         });
-        
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
 });
 
-// Console message (hidden Easter egg!)
-console.log('%c💕 Made with love for someone special 💕', 'color: #667eea; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);');
+console.log('%c💕 Made with love for someone special 💕', 'color: #667eea; font-size: 20px; font-weight: bold;');
 console.log('%cIf you\'re reading this, you\'re too curious! 😊', 'color: #764ba2; font-size: 14px;');
